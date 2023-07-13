@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Stock_trade/static/css/main.c98b0047.css",
+    "main.js": "/Stock_trade/static/js/main.fc80712c.js",
+    "static/media/sign_in.jpeg": "/Stock_trade/static/media/sign_in.6ae725061c6a17e8b27f.jpeg",
+    "index.html": "/Stock_trade/index.html",
+    "main.c98b0047.css.map": "/Stock_trade/static/css/main.c98b0047.css.map",
+    "main.fc80712c.js.map": "/Stock_trade/static/js/main.fc80712c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c98b0047.css",
+    "static/js/main.fc80712c.js"
+  ]
+}
