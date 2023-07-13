@@ -115,7 +115,7 @@ export default function Stock(props) {
     e.currentTarget.parentNode.firstChild.value="";
     console.log("here:",stocksellamount);
     if(stocksellamount==null){
-      alert("Reenter amount");
+      alert("Enter amount");
       return;
     }
     if(stocksellamount[index].id!=stock){

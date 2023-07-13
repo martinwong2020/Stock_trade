@@ -31,7 +31,7 @@ export default function Information(props) {
   const [chartData, setChartData]=useState({
     
   });
-  const [stock_amount,setStock_amount]=useState(1);
+  const [stock_amount,setStock_amount]=useState(0);
   const labels =props.label ;
   const options={
     plugins: {  
@@ -167,7 +167,7 @@ export default function Information(props) {
           <h3>Balance: {props.balance}</h3>
           <div className="buy_second_container">
             
-            <input className="buy_input" type="number" min="1" placeholder='1' onChange={(e)=>{setStock_amount(e.target.value)}}></input>
+            <input className="buy_input" type="number" min="1" placeholder='' onChange={(e)=>{setStock_amount(e.target.value)}}></input>
             <button id="buy_button" onClick={()=>{
               stock_purchase();
 

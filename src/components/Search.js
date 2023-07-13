@@ -17,7 +17,11 @@ export default function Search(props) {
     })
     .then(data=>{
       console.log(data);
-      console.log("here:", data["Monthly Time Series"]);
+      console.log("here:",data, data["Monthly Time Series"]);
+      if(data.hasOwnProperty("Error Message")){
+        alert("invalid stock name");
+        return;
+      }
       let month;
       let count=0;
       let months_arr=[];
