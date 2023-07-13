@@ -1,0 +1,132 @@
+.auth_container{
+    height:50vh;
+    width:39vw;
+    background-color: rgb(231, 233, 235);
+    border:solid 5px black;
+
+    
+}
+.auth_parent{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    width: 100vw;
+}
+.sign_in_image{
+    float:left;
+    height:100%;
+    width:50%;
+    
+}
+.log_in_container{
+
+    height:100%;
+    float:right;
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    /* float:right; */
+}
+.log_in_container>h2,.log_in_container>input,.log_in_container>button{
+    margin-left:5%;
+    margin-right:5%;
+    margin-top:2.5%;
+    margin-bottom:2.5%;
+    height:8vh;
+}
+.border{
+    height:1%;
+    border-top: solid 3px black;
+    width:80%;
+    border-left:none;
+    margin:auto;
+}
+.auth_input::placeholder{
+    text-align: center;
+    font-size:200%;
+}
+.auth_button{
+    font-size:200%;
+
+}
+.log_in{
+    padding:0;
+    margin:1%;
+}
+
+.sign_in{
+    background-color: rgb(190, 240, 212);
+    border:rgb(109, 250, 172) solid 3px;
+    
+}
+.sign_in:hover{
+    animation: border_transform 4s infinite;
+    background-color:rgb(109, 250, 172) ;
+
+    color:white;
+    box-shadow:0px 0px 20px 1px rgb(109, 250, 172) ;
+    border:rgb(78, 255, 157) solid 5px
+}
+.sign_out{
+    background-color: rgb(235, 215, 189);
+    border:rgb(250, 189, 109) solid 3px;
+}
+
+
+.sign_out:hover{
+    animation: border_transform 4s infinite;
+    background-color:rgb(250, 189, 109) ;
+
+    color:white;
+    box-shadow:0px 0px 20px 1px rgb(250, 189, 109) ;
+    border:rgb(250, 189, 109) solid 5px
+}
+
+@keyframes border_transform {
+    
+    0%{
+    }
+    25%{
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 10px;
+    }
+    50%{
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 10px;
+    }
+    75%{
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    100%{
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        border-top-left-radius:10px;
+    }
+}
+.google_sign_in{
+    font-size:200%;
+    color:white;
+    background-color: rgb(70,137,249);
+}
+
+.google_image{
+    height:7vh;
+    float:left;
+    
+}
+.red{
+    color:rgb(218, 39, 39);
+}
+.yellow{
+    color:orange;
+}
+.blue{
+    color:blue;
+}
+.green{
+    color:green;
+}

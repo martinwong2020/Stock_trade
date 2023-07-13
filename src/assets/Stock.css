@@ -1,0 +1,130 @@
+body{
+    background-color: rgb(185,153,118);
+    
+}
+.text{
+    color:whitesmoke;
+}
+#balance_container{
+    width:100vw;
+    height:10vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(210,180,140);
+    
+}
+#balance_text{
+    font-weight: bold;
+    font-style: italic;
+}
+#stock_parent_container{
+    height:60vh;
+    width:100vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color:rgb(102,66,41) ;
+    /* overflow-x: hidden; */
+
+}
+
+.stock_text_container{
+    width:25vw;
+    height:10vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.stock_container{
+    width:100vw;
+    border-bottom:solid 2px black;
+    /* height:70vh; */
+    height:10vh;
+    
+    background-color: rgb(131, 88, 58);
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+.sell_button{
+    height:max(20px,50px);
+    width:max(80px,10px);
+    color:rgb(236, 75, 75);
+    border-radius: 10px;
+    background-color: none;
+    background: transparent;
+    outline:none;
+    border:solid 3px rgb(236, 75, 75);
+    font-size: 1em;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    box-shadow:inset 0px 0px 0.5em 0px rgb(236, 75, 75);
+    letter-spacing: 0.5em;
+    
+    animation: border-flicker 2s infinite;
+    margin:10px;
+}
+@keyframes border-flicker {
+    0% {
+      opacity: 0.1;
+    }
+    2% {
+      opacity: 1;
+    }
+    4% {
+      opacity: 0.1;
+    }
+  
+    8% {
+      opacity: 1;
+    }
+    70% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+.sell_button:hover{
+    background-color: rgb(236, 75, 75);
+    color:navajowhite;
+    box-shadow:0px 0px 20px 1px rgb(236, 75, 75) ;
+    animation:none;
+}
+
+.letter_flicker_one{
+    animation: flicker infinite 2s;
+}
+.letter_flicker_two{
+    animation: flicker infinite 1s;
+}
+@keyframes flicker{
+    0%{
+        opacity:0.1;
+    }
+    5%{
+        opacity:0.5;
+    }
+    7%{
+        opacity:1;
+    }
+    10%{
+        opacity:0.1;
+    }
+    70%{
+        opacity:1;
+    }
+    90%{
+        opacity:0.8;
+    }
+    100%{
+        opacity:1;
+    }
+}
+.stock_input{
+    width:max(30px,50px);
+    height:max(30px,50px);
+    background-color: transparent;
+    outline:none;
+}
