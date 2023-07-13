@@ -166,6 +166,10 @@ export default function Stock(props) {
     console.log("herei",stocklist);
     // const stocks=[...stocklist];
     //to hard copy the data
+    if(e.target.value<0){
+      alert("enter valid number");
+      return;
+    }
     const stocks=JSON.parse(JSON.stringify(stocklist));
     stocks[index].sell_amount=Number(e.target.value);
     setStocksellamount(stocks);
