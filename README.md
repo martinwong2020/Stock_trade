@@ -8,3 +8,6 @@ React.js, Node.js, CSS, Javascript, Firebase(database and authentication)
 
 ## About
 A stock trading project that allows users to paper trade with the community. The project is a community trading portal that allows all users to paper trade together.
+
+## Status
+Ongoing, Debugging
